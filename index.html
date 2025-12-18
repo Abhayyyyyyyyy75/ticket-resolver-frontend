@@ -4,6 +4,12 @@
   <title>Ticket Resolver</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  if (!localStorage.getItem("role")) {
+    window.location.href = "login.html";
+  }
+</script>
+
 <body>
 
 <div class="box">
