@@ -81,6 +81,7 @@
 const API = "https://ticket-resolver-backend.onrender.com";
 
 
+
 // =================================================
 // LOGIN (USER + ADMIN)
 // =================================================
@@ -132,7 +133,7 @@ async function signup() {
     return;
   }
 
-  const res = await fetch("http://127.0.0.1:8000/signup", {
+  const res = await fetch(API + "/signup", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password })
