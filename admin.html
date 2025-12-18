@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+  <h2>Admin Dashboard</h2>
+
+  <button onclick="useTool()">Use Ticket Resolver</button>
+  <button onclick="loadScenarios()">View / Edit Scenarios</button>
+  <button onclick="downloadScenarios()">Download Scenarios</button>
+
+  <textarea id="scenarioEditor" style="height:200px;display:none;"></textarea>
+
+  <button id="saveBtn" onclick="saveScenarios()" style="display:none;">
+    Save Changes
+  </button>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
